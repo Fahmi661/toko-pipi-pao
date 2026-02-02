@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Kue Pipi Pao</title>
+    
+    <!-- Tailwind via CDN (Dipertahankan agar tampilan tetap jalan tanpa setup PostCSS rumit) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Quicksand', 'sans-serif'],
+              display: ['Fredoka', 'cursive'],
+            },
+            colors: {
+              pao: {
+                50: '#fff0f3',
+                100: '#ffc2d1',
+                200: '#ff8fa3',
+                300: '#ff5c8a',
+                400: '#ff0a54',
+                500: '#ff0040',
+              },
+              cream: {
+                50: '#fffdf2',
+                100: '#fff9c4',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #fff0f3;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@emailjs/browser": "https://esm.sh/@emailjs/browser@^4.4.1",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <!-- Entry point utama mengarah ke file TypeScript -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
